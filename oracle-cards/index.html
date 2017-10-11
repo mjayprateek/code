@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Oracle Tarot Cards</title>
+  <meta name="description" content="Oracle Tarot Cards">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+  <!-- CSS	
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="resources/css/normalize.css">
+  <link rel="stylesheet" href="resources/css/skeleton.css">
+  <link rel="stylesheet" href="resources/css/custom.css">
+
+  
+  <!-- Javascript
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script src="resources/js/jquery-3.1.0.min.js" ></script>
+  
+  <script>
+	  	
+  		$(document).ready(function() {	
+  		    $('#oracle_tarot').click(function() {
+  		        if(this.paused) {
+                this.play();
+                $('#btn-text').html('STOP');
+              } else {
+                this.pause();
+                $('#btn-text').html('START');
+              }
+  		    });
+
+          $('#play').click(function() {
+              if($('#oracle_tarot')[0].paused) {
+                $('#oracle_tarot')[0].play();
+                $('#btn-text').html('STOP');
+              } else {
+                $('#oracle_tarot')[0].pause();
+                $('#btn-text').html('START');
+              }
+          });
+  			
+  		});		
+
+  </script>
+
+</head>
+<body>
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="container">
+    <div class="row">
+      <video loop="loop" id="oracle_tarot" class="one-half column">
+        <source src="resources/images/oracle_tarot.mp4" type="video/mp4" />
+        <img src="resources/images/oracle_tarot.gif" />
+      </video>
+    </div>
+    <div class="row">
+      <button id="play" class="one-half column" style="height:50px"><span id="btn-text" style="margin:0;font-size:25px;vertical-align:middle;">START</span></button>
+    </div> 
+
+  </div>
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+</html>
