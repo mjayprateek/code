@@ -1,0 +1,286 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,300,500);
+
+//@import "fontawesome/font-awesome.less";
+@import "range.less";
+@import "flex.less";
+@import "icons.less";
+@import "animate.less";
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-touch-callout: none;
+}
+*:focus {
+  outline: none;
+}
+
+
+html,
+body {
+  min-height:100%;
+  width: 100%;
+  height: 100%;
+  overflow : hidden;
+}
+
+#mui-overlay {
+  background-color: rgba(0, 0, 0, .5);
+}
+
+.user-background-color{
+  background-color : #2196F3;
+}
+
+.user-color{
+  background-color : #2196F3;
+}
+
+.snack-bar{
+  overflow: hidden;
+  text-align:center;
+  padding: 12px;
+  position: fixed;
+  left: 20px;
+  right: 20px;
+  bottom: 20px;
+  z-index: 99999999;
+  color : #fff;
+  background: #323232;
+  border-radius: 2px;
+  font-size: 14px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  -webkit-animation-duration: .2s;
+  animation-duration: .2s;
+
+}
+
+
+
+body {
+  font: normal 14px Roboto, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #000;
+  background: #000;
+
+  header{
+    padding: 16px;
+      h1,h2,h3,h4{
+      margin : 0;
+      padding : 0;
+      color : #fff;
+    }
+  }
+}
+
+
+
+/* Application View */
+.app {
+  .display(flex);
+  .flex-direction(column);
+  height: 100%;
+}
+
+.video-library{
+
+  header{
+    position: absolute;
+    top : 0;
+    left : 0;
+    width : 100%;
+    height : 54px;
+    z-index : 100;
+    background-color: rgba(0, 71, 165, 0.84);
+
+    h1{
+      margin: 0;
+      padding: 0;
+      font-size: 20px;
+      line-height: 20px;
+      font-weight: 400;
+      float:left;
+    }
+
+    .connect-icon{
+      position: absolute;
+      top : 16px;
+      right : 16px;
+      width : 24px;
+      height : 24px;
+      background : url('../images/icon-connected.png') no-repeat center center;
+      background-size : contain;
+    }
+  }
+
+  .flex(1);
+  list-style: none;
+  overflow: scroll;
+  margin: 0;
+
+  .video-item{
+    position: relative;
+    height : 200px;
+    background : #fff no-repeat center;
+    background-size : cover;
+    box-shadow: inset 0 0 70px 20px #000000;
+
+    h1{
+      font-size: 16px;
+      font-weight : 200;
+      line-height: 16px;
+      color : #fff;
+      position: absolute;
+      left : 0;
+      bottom : 0;
+      padding : 10px;
+      margin : 0;
+    }
+  }
+}
+
+.video-player{
+  .display(flex);
+  .flex-direction(column);
+  .flex(1);
+
+  header{
+    position: absolute;
+    top : 0;
+    left : 0;
+    width : 100%;
+    height : 54px;
+    z-index : 100;
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+
+  video{
+
+  }
+
+  footer{
+    position: absolute;
+    bottom : 0;
+    left : 0;
+    width : 100%;
+    height : 54px;
+    z-index : 100;
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+}
+
+
+/* Splash View */
+.splash{
+  background: #000000 url('../images/splash-bg.jpg') no-repeat center center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  .display(flex);
+  .flex-direction(column);
+  .align-items(center);
+  .justify-content(flex-end);
+  padding-bottom: 120px;
+
+  .text-feedback{
+    color: #fff;
+    font-size: 16px;
+    font-weight: 300;
+    padding: 0 60px 0 60px;
+    text-align: center;
+    line-height: 24px;
+  }
+
+  button{
+    margin : 10px;
+    &.btn-search{
+      color : #fff;
+    }
+  }
+}
+
+.connection-manager{
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  right: 30px;
+  background: #fff;
+  z-index: 100;
+  .animated;
+  .zoomIn;
+  animation-duration: .1s;
+  -moz-animation-duration: .1s;
+  -webkit-animation-duration: .1s;
+
+  header{
+    padding: 16px 16px 16px 48px;
+    background: #616161 url('../images/icon-connected.png') no-repeat 14px center;
+    background-size: 24px;
+
+    h3{
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 20px;
+      color: #fff;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+
+  p{
+    padding: 16px;
+    text-align: center;
+    margin:0;
+  }
+
+  ul {
+    margin : 0;
+    li {
+      padding: 16px 16px 16px 48px;
+      border-bottom: solid 1px rgba(0, 0, 0, 0.1);
+      background: url('../images/icon-tv.png') no-repeat 10px center;
+      background-size: 32px;
+      &.speaker{
+        background-image: url('../images/icon-speaker.png');
+      }
+      &.tv{
+        background-image: url('../images/icon-tv.png');
+      }
+    }
+  }
+
+  footer{
+    text-align: center;
+    padding: 16px;
+  }
+}
+
+.icon.back{
+  .icon;
+  font-size: 32px;
+  line-height: 32px;
+  color: #fff;
+  &:before {
+    content: "\ea40";
+  }
+}
+
+.icon.connection{
+  width : 32px;
+  height : 32px;
+  background : url('../images/icon-discovered.png') no-repeat center;
+  background-size: contain;
+  float:right;
+  &.connected{
+    background-image: url('../images/icon-connected.png');
+  }
+}
