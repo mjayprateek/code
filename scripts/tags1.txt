@@ -1,0 +1,120 @@
+p.guessTotal: 1000
+fulltext: 
+20_group.0_tagid: default/Tag1
+20_group.0_tagid.property: jcr:content/metadata/cq:tags
+20_group.0_tagid.titlepath: 
+20_group.1_tagid: default/Tag2
+20_group.1_tagid.property: jcr:content/metadata/cq:tags
+20_group.1_tagid.titlepath: 
+20_group.2_tagid: default/Tag3
+20_group.2_tagid.property: jcr:content/metadata/cq:tags
+20_group.2_tagid.titlepath: 
+20_group.3_tagid: default/Tag4
+20_group.3_tagid.property: jcr:content/metadata/cq:tags
+20_group.3_tagid.titlepath: 
+20_group.4_tagid: default/Tag5
+20_group.4_tagid.property: jcr:content/metadata/cq:tags
+20_group.4_tagid.titlepath: 
+20_group.5_tagid: default/Tag6
+20_group.5_tagid.property: jcr:content/metadata/cq:tags
+20_group.5_tagid.titlepath: 
+20_group.6_tagid: default/Tag7
+20_group.6_tagid.property: jcr:content/metadata/cq:tags
+20_group.6_tagid.titlepath: 
+20_group.7_tagid: default/Tag8
+20_group.7_tagid.property: jcr:content/metadata/cq:tags
+20_group.7_tagid.titlepath: 
+20_group.8_tagid: default/Tag9
+20_group.8_tagid.property: jcr:content/metadata/cq:tags
+20_group.8_tagid.titlepath: 
+20_group.9_tagid: default/Tag10
+20_group.9_tagid.property: jcr:content/metadata/cq:tags
+20_group.9_tagid.titlepath: 
+20_group.10_tagid: default/Tag11
+20_group.10_tagid.property: jcr:content/metadata/cq:tags
+20_group.10_tagid.titlepath: 
+20_group.11_tagid: default/Tag12
+20_group.11_tagid.property: jcr:content/metadata/cq:tags
+20_group.11_tagid.titlepath: 
+20_group.12_tagid: default/Tag13
+20_group.12_tagid.property: jcr:content/metadata/cq:tags
+20_group.12_tagid.titlepath: 
+20_group.13_tagid: default/Tag14
+20_group.13_tagid.property: jcr:content/metadata/cq:tags
+20_group.13_tagid.titlepath: 
+20_group.14_tagid: default/Tag15
+20_group.14_tagid.property: jcr:content/metadata/cq:tags
+20_group.14_tagid.titlepath: 
+20_group.15_tagid: default/Tag16
+20_group.15_tagid.property: jcr:content/metadata/cq:tags
+20_group.15_tagid.titlepath: 
+20_group.16_tagid: default/Tag17
+20_group.16_tagid.property: jcr:content/metadata/cq:tags
+20_group.16_tagid.titlepath: 
+20_group.17_tagid: default/Tag18
+20_group.17_tagid.property: jcr:content/metadata/cq:tags
+20_group.17_tagid.titlepath: 
+20_group.18_tagid: default/Tag19
+20_group.18_tagid.property: jcr:content/metadata/cq:tags
+20_group.18_tagid.titlepath: 
+20_group.19_tagid: default/Tag20
+20_group.19_tagid.property: jcr:content/metadata/cq:tags
+20_group.19_tagid.titlepath: 
+20_group.20_tagid: default/Tag21
+20_group.20_tagid.property: jcr:content/metadata/cq:tags
+20_group.20_tagid.titlepath: 
+20_group.21_tagid: default/Tag22
+20_group.21_tagid.property: jcr:content/metadata/cq:tags
+20_group.21_tagid.titlepath: 
+20_group.22_tagid: default/Tag23
+20_group.22_tagid.property: jcr:content/metadata/cq:tags
+20_group.22_tagid.titlepath: 
+20_group.23_tagid: default/Tag24
+20_group.23_tagid.property: jcr:content/metadata/cq:tags
+20_group.23_tagid.titlepath: 
+20_group.24_tagid: default/Tag25
+20_group.24_tagid.property: jcr:content/metadata/cq:tags
+20_group.24_tagid.titlepath: 
+20_group.25_tagid: default/Tag26
+20_group.25_tagid.property: jcr:content/metadata/cq:tags
+20_group.25_tagid.titlepath: 
+20_group.26_tagid: default/Tag27
+20_group.26_tagid.property: jcr:content/metadata/cq:tags
+20_group.26_tagid.titlepath: 
+20_group.27_tagid: default/Tag28
+20_group.27_tagid.property: jcr:content/metadata/cq:tags
+20_group.27_tagid.titlepath: 
+20_group.28_tagid: default/Tag29
+20_group.28_tagid.property: jcr:content/metadata/cq:tags
+20_group.28_tagid.titlepath: 
+savedSearches@Delete: 
+savedSearches: 
+20_group.p.or: true
+jcr:content/metadata/cq:tags@TypeHint: String[]
+jcr:content/metadata/cq:tags@Delete: 
+3_group.property: jcr:content/metadata/dc:format
+3_group.p.or: true
+3_group.property.breadcrumbs: File Type
+path: /content/dam/mac/bpqatest
+Select: 
+4_rangeproperty.property: jcr:content/metadata/dam:size
+7_group.property: jcr:content/metadata/dam:status
+7_group.p.or: true
+7_group.property.breadcrumbs: Approval Status
+10_group.rangeproperty.property.breadcrumbs: Expiry Status
+12_rangeproperty.property: jcr:content/averageRating
+13_group.p.or: true
+jcr:content/metadata/cq:tags@TypeHint: String[]
+jcr:content/metadata/cq:tags@Delete: 
+14_group.p.or: true
+jcr:content/metadata/cq:tags@TypeHint: String[]
+jcr:content/metadata/cq:tags@Delete: 
+15_group.property: */*/*/jcr:content/jcr:mimeType
+15_group.p.or: true
+15_group.property.breadcrumbs: Video Format
+mainasset: true
+type: dam:Asset
+_charset_: utf-8
+location: asset
+location.suggestion: Assets
+_: 1524555477079
